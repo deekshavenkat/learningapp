@@ -315,28 +315,7 @@ for those collections are as follows. </p>
 The endpoints and their functionalities are as follows. </p>
  
 
-<p>1)<strong>/courses/enroll/:id</strong> -> POST Method -> This route should enrol the user to the course in the courses collection that has _id equal to id that comes with the request by making the isApplied status of the course as true.</p>
-<ul>
-<li>If the user is enrolled in the course successfully, then you should send a response code of 200 with the following
-response message.</li>
-<pre>
-<code>
-{
-"message": "You have successfully enrolled for the course"
-}
-</code>
-</pre>
-<li>If the user had already enrolled in the course (i.e.) isApplied status of the course is already true, then you should
-send a response code of 403 with the following response message.</li>
-<pre>
-<code>
-{
-"error": "You have already applied for this course"
-}
-</code>
-</pre>
-</ul>
- 
+
 
 <p><strong>1)&nbsp;<em>/courses/enroll/:id&nbsp;</em>-&gt; POST
 Method -&gt;&nbsp;</strong>This route should enrol the user to the course in the courses collection that has _id
